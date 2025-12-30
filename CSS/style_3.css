@@ -1,0 +1,91 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            
+            padding: 40px ;
+            padding-top: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        main {
+            background: #e00000;
+            color: white;
+        }
+
+        .hero {
+            height : 350px;
+            /* also use  */
+            /* height: 60vh; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .hero-heading {
+            font-size: 45px;
+            margin-bottom: 40px;
+            font-weight: 100;
+        }
+
+        .hero-paragraph {
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .hero-logo {
+            max-width: 250px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: #571212;
+            padding: 50px 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px 0 0;
+        }
+        .card:last-child {
+            margin-right: 0;
+        }
+
+        .card-head {
+            font-size: 20px;
+            font-weight: 350;
+            margin-bottom: 20px;
+        }
+
+        .card-para {
+            color: #8b3c3c;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+      
+ .index_page {
+        color:  #e00000;
+        text-decoration: none;
+        margin: 20px 0;
+        padding: 0;
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .index_page i {
+        margin-right: 6px;
+    }
