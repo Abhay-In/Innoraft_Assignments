@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <title>CSS Assignment 2</title>
-        <style>
-            * {
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Assignment 1</title>
+</head>
+<style>
+  *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 body {
-    height: 100vh;
-    width: 100vw;
-    padding: 20px;
-}
+      margin: 0;
+      background: #f6f6f8;
+    }
 
-.top {
-    height: 20%;
-    background-color: #ff5fa2;
-    border-bottom: 10px solid white;
-}
+    .box {
+      width: 95%;
+      margin: 0px 20px auto;
+      padding: 16px;
+    }
 
-.middle {
-    height: 60%;
-    display: flex;
-    border-bottom: 10px solid white;
-}
+    .top {
+      min-height: 90px;
+      background: #ff5aa7;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
 
-.left {
-    width: 70%;
-    background-color: #ff0080;
-    border-right: 10px solid white;
-}
+    .mid {
+      display: flex;
+      margin-bottom: 16px;
+    }
 
-.right {
-  width: 30%;
-  background: #c4005c;
-}
+    .main {
+      /* flex: 3; we can also use this flex box prop here. add grow space(3+1=4-> 3/4) part of the size given by the parent */
+      width:70%;
+      min-height: 320px;
+      background: #ff007f;
+      border-radius: 12px;
+      padding: 20px;
+      margin-right: 16px;
+    }
 
-.bottom {
-  height: 20%;
-  background: #7b2a4d;
-}
-.home-link {
-        color: #ff6fb3;
+    .sidebar {
+      /* flex: 1; ->1/4*/
+      width: 28%;
+      background: #c0006a;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .bottom {
+      min-height: 80px;
+      background: #7a2a52;
+      border-radius: 12px;
+    }
+     .index_page {
+        color:  #e00000;
         text-decoration: none;
         margin: 20px 0;
+        padding: 0;
+        display: inline-block;
         font-weight: 600;
         letter-spacing: 0.5px;
     }
 
-    .home-link i {
+    .index_page i {
         margin-right: 6px;
     }
-        </style>
+    .bottom:hover,.main:hover,.sidebar:hover,.top:hover {
+        scale: calc(1.01);
+        transition: 0.4s;
+    }
+</style>
+<body>
+    <a href="https://abhay-in.github.io/Innoraft_Assignments/index.html" class="index_page">
+    <i class="fa-solid fa-house"></i> Index Page</a>
+  <div class="box">
+    <div class="top"></div>
 
-	</head>
-	<body>
-        <a href="https://abhay-in.github.io/Innoraft_Assignments/index.html" class="home-link">
-    <i class="fa-solid fa-house"></i> Index Page
-</a>
-		<header class="top"></header>
+    <div class="mid">
+      <div class="main">
+      </div>
+      <div class="sidebar">
+      </div>
+    </div>
 
-		<main class="middle">
-			<section class="left"></section>
-			<aside class="right"></aside>
-		</main>
-
-		<footer class="bottom"></footer>
-	</body>
+    <div class="bottom"></div>
+  </div>
+</body>
 </html>
